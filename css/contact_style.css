@@ -1,11 +1,6 @@
 section.top_spacer{
 	height: 100px;
 	}
-		
-section.content{
-	background-color: #333333;
-	opacity: 0.90;
-	}
 
 .contact_container{
 	width: 100%;
@@ -23,21 +18,14 @@ section.content{
 	margin: 10px;
 	border: 1px solid #B8AA74;
 	}	
-
-input[type=text]{
-	resize: vertical;
-	color: #000000;
-	margin-bottom: 5px;
-	}
-
-input[type=textarea]{
-	padding-top: 20px;
-	color: #000000;
-	}
 	
 ul.clear_list{
 	list-style-type: none;
 	margin: 10px;
+	}
+
+li{
+	color: #FFFFFF;
 	}
 	
 li.accented{
@@ -45,21 +33,19 @@ li.accented{
 	font-weight: bold;
 	color: #B8AA74;
 	}
-	
-li{
-	color: #FFFFFF;
-	}
 
 iframe.map{
 	min-width: 200px;
 	min-height: 200px;
 	max-width: 400px;
-	max-height: 400px;
+	max-height: 100%;
 	border: 2px solid #B8AA74;
 	margin: 10px;
 	}
 
-section.clear{
-	height: 300px;
-	}	
+#mars_map {
+	width: 1248px;
+	}
+
+
 	
