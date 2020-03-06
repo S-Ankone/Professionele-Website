@@ -1,0 +1,190 @@
+
+/* General Make up of the site - aka visual skin - not defaults*/
+/* ...........for defaults see default_style.css ..............*/
+
+body{
+	background-image: url(../pictures/mars_ocean.png);
+	background-repeat: no-repeat;
+	background-size: 1400px;
+	background-position: left top;
+	background-color: #000000;
+	background-attachment: fixed;	
+	}
+
+div.top_wrapper {
+	padding: 3px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	max-height: 100px;
+	z-index:2;
+	background-color: #0D2946;
+	}
+
+header{
+	width: 70%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	}
+
+div.logo{
+	width: 25%;
+	min-width: 150px;
+	}
+
+div.hamburger{
+	display: none;
+	width: 100px;
+	margin: auto;	
+	}
+
+img#ham{
+	width: 40px;
+	}	
+
+nav{
+	width: 50%;
+	margin: auto;
+	}
+
+div.login{
+	width: 20%;
+	min-width: 100px;
+	margin: auto;
+	text-align: right;
+	}
+
+@media screen and (max-width: 700px){
+	header{
+		margin: auto; 
+		}
+		
+	nav{
+		display: none;
+		}
+	
+	div.logo{
+		min-width: 100px;
+		}
+	
+	h1{
+		font-size: 14px;
+		}
+		
+	div.hamburger{
+		display: block;
+		}
+		
+	footer{
+		text-align: center;
+		}
+	}
+
+button{
+	padding: 10px 15px;
+	margin: 3px;
+	background-color: #0D2946;
+	color: #B8AA74;
+	border: 1px solid #B8AA74;
+	cursor: pointer;
+	font-weight: bold;
+	box-shadow: 1px 1px 4px #B8AA74;	
+	}
+
+button:hover{
+	box-shadow: 2px 2px 5px #32FFFF;
+	}
+
+button.active{
+	box-shadow: 2px 2px 5px #32FFFF;
+	}
+
+#logo_home_button{
+	padding: 0px 5px;
+	border: none;
+	box-shadow: none;
+	border: 1px solid #0D2946;
+	}
+
+#mini_menu{
+	padding: 5px 7px;
+	}
+
+/* end of the top section of the website */
+
+div.middle_wrapper{
+	position: relative;
+	top: 100px;
+	width: 100%;
+	z-index: 1;
+	}
+	
+main {
+	width: 70%;
+	margin: 0px auto 0px auto;
+	}
+
+section.content{
+	background-color: #333333;
+	opacity: 0.90;
+	}
+
+section.clear{
+	height: 300px;
+	}	
+
+/* end of the main content section of the website */
+
+
+footer {
+	width: 75%;
+	margin: 100px auto 0px auto;
+	background-color: #333333;
+	opacity: 0.90;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+	}
+	
+.infooter{
+	width: 150px;	
+	color: #FFFFFF;
+	display: block;
+	margin: 7px 15px 5px 15px;
+	}
+
+div#currency{
+	width: 320px;
+	text-align: center;
+	}
+
+img#coins{
+	max-width: 100%;
+	border-radius: 50%;
+	}
+
+#social_logos{
+	width: 100px;
+	height: 35px;
+	}
+
+/* end of the actual scrolling content of the site */
+
+
+div.bottom_wrapper {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 34px;
+	background-color: #0D2946;	
+	text-align: center;
+	color: #B8AA74;
+	z-index: 2;
+	}
+	
+	
+/* end of main style declaration, aka visual skin */
