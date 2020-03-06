@@ -8,8 +8,12 @@
 	
 	<!-- style related meta tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/default_style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/main_style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/index_style.css"/>
+	
+	<!--style related java-script-->
+	<script defer src="scripts/menu_button_anim.js"></script>
 	
 	<!-- content related meta tags -->
 	<title>Mars Ventures</title>
@@ -20,33 +24,27 @@
 	<div class="top_wrapper">
 		<header>
 			<div class="logo">
-				<h1>Mars Ventures</h1>
+				<button id="logo_home_button" onclick="document.location = 'index.html'">
+					<h1>Mars Ventures</h1>
+				</button>
 			</div>
-			<nav>
-				<ul>
-					<li id="current"><a href="index.html" class="main_nav">Home</a></li>
-					<li><a href="#fly" class="main_nav">Flight</a></li>
-					<li><a href="#live" class="main_nav">Life</a></li>
-					<li><a href="#mobility" class="main_nav">Mobility</a></li>
-					<li><a href="contact.html" class="main_nav">Contact</a></li>
-				</ul>
+			<div class="hamburger">
+				<button id="mini_menu" onclick="document.location='mini_menu.html'"><img id="ham" src="pictures/mini_menu.png" alt=""/></button>
+			</div>
+			<nav id="nav">
+				<button class="menu_button" onclick="document.location = '#fly'">Flight</button>
+				<button class="menu_button" onclick="document.location = '#live'">Life</button>
+				<button class="menu_button" onclick="document.location = '#mobility'">Mobility</button>
+				<button class="menu_button" onclick="document.location = 'contact.html'">Contact</button>
 			</nav>
 			<div class="login">
-			<ul>
-				<p class="special">Log in, or <a href="contact.html" class="special" title="Live on Mars">Register</a></p>
-				
-				<form action="contact.html" method="GET">
-					<input size="7" required placeholder="Email" id="login_email" name="login_email" type="email" /> 
-					<br/>
-					<input size="7" required placeholder="Password" id="login_pass" name="login_pass" type="password" />
-					<br/>
-					<input type="submit" value="Log in" />
-				</form>
+				<button onclick="document.location='log_in.html'">Log in</button>
 			</div>  
 		</header>
 	</div>
 	<div class="middle_wrapper">
 		<main>
+
 	<!-- 1st section _ANIMATION_ -->
 			<section class="animation">
 				<div class="animated">

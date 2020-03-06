@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" type="text/css" href="css/default_style.css"/>	
 	<link rel="stylesheet" type="text/css" href="css/main_style.css"/>
-	<link rel="stylesheet" type="text/css" href="css/contact_style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/log_in_style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/input_style.css"/>
 	
 	<!--style related java-script-->
@@ -36,82 +36,33 @@
 				<button class="menu_button" onclick="document.location = 'index.html#fly'">Flight</button>
 				<button class="menu_button" onclick="document.location = 'index.html#live'">Life</button>
 				<button class="menu_button" onclick="document.location = 'index.html#mobility'">Mobility</button>
-				<button class="active" onclick="document.location = 'contact.html'">Contact</button>
+				<button class="menu_button" onclick="document.location = 'contact.html'">Contact</button>
 			</nav>
 			<div class="login">
-				<button onclick="document.location='log_in.html'">Log in</button>
+				<button class="active" onclick="document.location='log_in.html'">Log in</button>
 			</div>  
 		</header>
 	</div>
 	<div class="middle_wrapper">
-		<main>
-
-			<section class="top_spacer">
-				<!-- 1st section _SPACER_ -->
-			</section>
-
-	<!-- 2nd section _GENERAL TEXT_ -->	
-			<section class="content">
-				<h1>Contact us on Mars</h1>
-					<aside class="contact_aside">
-						<p class="white">
-							This is just <em class="white">some gibberish</em> in order to have some text in this text-box.<br/>
+		<main id="main_login">
+			<div class="log_in_wrapper">
+				<section class="content" id="login_content">
+					<h1>Log in to our site</h1>
+					<br/>
+					<div id="small_wrap">
+						<p class="special">Log in, or <a href="log_in.html" class="special" title="Live on Mars">Register</a></p>
+					
+						<form action="log_in.html" method="GET">
+							<input required autofocus placeholder="Email" id="login_email" name="login_email" type="email" /> 
 							<br/>
-							You know how this goes, hardest in building a site, besides fighting the <code>divs</code>, is to fill it with useful
-							text. This is probably why even <em class="white">those proficient in webdesign</em> choose 
-							<strong class="white">to fill
-							their page with a LOT of images.</strong>
-								
-							
-						</p>
-					</aside>
-					<div class="contact_container">
-						<div class="contact_form">
-							<form action="index.html" method="GET">
-								<label for="first_name">First Name</label>
-								<input type="text" id="first_name" name="firstname" placeholder="Your First Name" autofocus />
-
-								<label for="last_name">Last Name</label>
-								<input type="text" id="last_name" name="lastname" placeholder="Your Last Name" />
-
-								<label for="e_mail">Email</label>
-								<input type="email" id="e_mail" name="email" placeholder="You Email" required />
-
-								<label for="message">Message</label>
-								<textarea id="message" name="message" placeholder="Your Message to Us" required ></textarea>
-								
-								<input type="submit" value="Print"/>
-							</form>
-							<p class="special">* After printing your message, you can send it to the address to the right or below.</p>
-						</div>
-						<div class="contact_info">							
-							<ul class="clear_list">
-								<li class="accented">Our Address:</li>
-								<li><br/></li>
-								<li>Mars Ventures</li>
-								<li>Olympus Mons 1</li>
-								<li>1234 AB  Mount Olympus</li>
-								<li><br/></li>
-								<li>tel: 123- 45 67 89 10</li>
-								<li><br/></li>
-								<li><br/></li>
-								<li class="accented">Our bankinformation:</li>
-								<li><br/></li>
-								<li>IBAN: MS01 SFAA 013 37 101 808</li>
-								<li><br/></li>
-								<li>BIC: SFAA MARS 7075</li>
-								<li></li>
-							</ul>
-						</div>
-						<iframe class="map" src="map_dummy.html" >
-						</iframe>
+							<input required placeholder="Password" id="login_pass" name="login_pass" type="password" />
+							<br/>
+							<input id="submit_login" type="submit" value="Submit" />
+						</form>		
 					</div>
-			</section>
-		
-				<!-- 3rd section _SEE THROUGH_design -->
-			<section class="clear">
+				</section>
+			</div>
 
-			</section>
 		</main>
 	<!-- End of the MAIN information -->	
 		<footer>

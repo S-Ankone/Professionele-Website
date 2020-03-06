@@ -1,15 +1,6 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	
-	font-family: Verdana, Arial;
-	font-style: normal;
-	font-size: 14px;
-	font-size-adjust: 0.58;	
-	color: #B8AA74;	
-	
-	box-sizing: border-box;
-	}
+
+/* General Make up of the site - aka visual skin - not defaults*/
+/* ...........for defaults see default_style.css ..............*/
 
 body{
 	background-image: url(../pictures/mars_ocean.png);
@@ -19,53 +10,13 @@ body{
 	background-color: #000000;
 	background-attachment: fixed;	
 	}
-	
-h1{
-	font-size: 24px;
-	padding: 14px;
-	}
-	
-h2{
-	font-size: 16px;
-	padding: 10px;
-	font-weight: bold;
-	color: #FFFFFF;
-	}
-
-h4{
-	color: #FFFFFF;
-	}
-
-p{
-	margin: 0px 10px;
-	}
-
-.special{
-	font-size: 10px;
-	margin: 5px 0px 5px 0px;
-	}
-
-.white{
-	padding: 5px;	
-	color: #FFFFFF;
-	}	
-
-a.links:link{text-decoration: none; color:#FFFFFF;}
-a.links:hover{text-decoration: underline;}
-a.links:visited{color: #FFFFFF;}
-
-
-em{
-	font-style: italic;
-	}
-
-/* end of general CSS declarations for this site */
 
 div.top_wrapper {
+	padding: 3px;
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	height: 100px;
+	max-height: 100px;
 	z-index:2;
 	background-color: #0D2946;
 	}
@@ -73,8 +24,7 @@ div.top_wrapper {
 header{
 	width: 70%;
 	height: 100%;
-	margin: 0px auto 0px auto;
-	overflow:hidden;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
 	}
@@ -82,68 +32,83 @@ header{
 div.logo{
 	width: 25%;
 	min-width: 150px;
-	height: 98px;
-	text-align: center;
 	}
 
-.main_nav{
-	text-decoration: none;
+div.hamburger{
+	display: none;
+	width: 100px;
+	margin: auto;	
 	}
+
+img#ham{
+	width: 40px;
+	}	
 
 nav{
 	width: 50%;
 	margin: auto;
-	overflow: hidden;
 	}
 
-nav li {
-	display: inline-block;
-	max-width: 75px;
-	padding: 10px;
-	margin: 2px;
-	list-style: none;
-	box-shadow: 1px 1px 4px #B8AA74;		
-	}
-
-nav li:hover{
-	box-shadow: 1px 1px 5px #32FFFF;	
-	}
-
-#current{
-	box-shadow: 1px 1px 5px #32FFFF;
-	}
-
-#current:hover{
-	box-shadow: 1px 1px 4px #B8AA74;		
-	}
-	
 div.login{
-	width: 25%;
+	width: 20%;
 	min-width: 100px;
-	size: fixed;
-	height: 100%;
+	margin: auto;
 	text-align: right;
-	} 
-
-input[type=email]{
-	color: #000000;
 	}
+
+@media screen and (max-width: 700px){
+	header{
+		margin: auto auto auto 12px;
+		}
+	nav{
+		display: none;
+		}
 	
-input[type=password]{
-	color: #000000;
+	div.logo{
+		min-width: 100px;
+		}
+	
+	h1{
+		font-size: 14px;
+		}
+		
+	div.hamburger{
+		display: block;
+		}
+		
+	footer{
+		text-align: center;
+		}
 	}
 
-input[type=submit]{
+button{
+	padding: 10px 15px;
+	margin: 3px;
 	background-color: #0D2946;
-	border: none;
-	padding: 5px;
-	margin: 3px 3px;
+	color: #B8AA74;
+	border: 1px solid #B8AA74;
 	cursor: pointer;
-	box-shadow: 1px 1px 5px #B8AA74;	
+	font-weight: bold;
+	box-shadow: 1px 1px 4px #B8AA74;	
 	}
 
-input[type=submit]:hover{
-	box-shadow: 1px 1px 4px #32FFFF;	
+button:hover{
+	box-shadow: 2px 2px 5px #32FFFF;
+	}
+
+button.active{
+	box-shadow: 2px 2px 5px #32FFFF;
+	}
+
+#logo_home_button{
+	padding: 0px 5px;
+	border: none;
+	box-shadow: none;
+	border: 1px solid #0D2946;
+	}
+
+#mini_menu{
+	padding: 5px 7px;
 	}
 
 /* end of the top section of the website */
@@ -160,7 +125,17 @@ main {
 	margin: 0px auto 0px auto;
 	}
 
+section.content{
+	background-color: #333333;
+	opacity: 0.90;
+	}
+
+section.clear{
+	height: 300px;
+	}	
+
 /* end of the main content section of the website */
+
 
 footer {
 	width: 75%;
@@ -181,7 +156,12 @@ footer {
 	margin: 7px 15px 5px 15px;
 	}
 
-#coins{
+div#currency{
+	width: 320px;
+	text-align: center;
+	}
+
+img#coins{
 	max-width: 100%;
 	border-radius: 50%;
 	}
@@ -190,17 +170,9 @@ footer {
 	width: 100px;
 	height: 35px;
 	}
-	
-#currency{
-	width: 320px;
-	text-align: center;
-	}
-
-address{
-
-	}
 
 /* end of the actual scrolling content of the site */
+
 
 div.bottom_wrapper {
 	position: fixed;
@@ -212,3 +184,6 @@ div.bottom_wrapper {
 	color: #B8AA74;
 	z-index: 2;
 	}
+	
+	
+/* end of main style declaration, aka visual skin */

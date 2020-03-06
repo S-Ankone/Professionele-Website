@@ -7,7 +7,7 @@ section.animation{
 	width: 150px;
 	height: 75px;
 	position: relative;
-	top: 350px;
+	top: 300px;
 	left: 20%;
 	animation-name: flying;
 	animation-duration: 7s;
@@ -17,30 +17,21 @@ section.animation{
 	}
 		
 @keyframes flying{
-	0% {width: 1px; height:1px; left: 0%; top: 300px;}
-	25% {width: 75px; height: 50px; left: 10%; top: 325px;}
-	50% {width: 150px; height: 75px; left: 25%; top: 350px;}
-	75% {width: 250px; height: 125px; left: 50%; top: 375px;}
-	100% {width: 350px; height: 175px; left: 75%; top: 400px;}
+	0% {width: 1px; height:1px; left: 0%; top: 20%;}
+	25% {width: 70px; height: 35px; left: 15%; top: 30%;}
+	50% {width: 150px; height: 75px; left: 30%; top: 40%;}
+	75% {width: 200px; height: 100px; left: 40%; top: 50%;}
+	100% {width: 300px; height: 150px; left: 50%; top: 60%;}
 	}
 
 img.anim{
 	width: 100%;
 	height: 100%;
 	}
-		
-section.clear{
-	height: 300px;
-	}
 
 .tag{
 	position: relative;
 	top: 120px;
-	}
-
-section.content{
-	background-color: #333333;
-	opacity: 0.90;
 	}
 
 .article_container{
@@ -71,13 +62,8 @@ article{
 	}
 
 button.register{
-	padding: 15px 25px;
-	margin: 10px 15px;
-	background-color: #0D2946;
-	color: #B8AA74;
-	border: 1px solid #B8AA74;
-	cursor: pointer;
-	font-weight: bold;
+	margin: 10px 15px;	
+	padding: 15px 25px;	
 	animation-name: flashing;
 	animation-duration: 4s;
 	animation-delay: 1s;
@@ -90,17 +76,25 @@ button.register{
 	from {background-color: #0D2946; color: #B8AA74; border: 1px solid #B8AA74;}
 	to {background-color: #B8AA74; color: #0D2946; border: 1px solid #0D2946;}
 	}	
+	
+@media screen and (max-width: 1212px){
+	div.sign_up{
+		text-align: center;
+		}
+	}	
 
-button.register:hover{
-	box-shadow: 2px 2px 5px #32FFFF;
+@media screen and (max-width: 700px){
+		
+	article{
+		text-align: center;
+		}
+	
 	}
-
 
 a.wth:link{
 	font-size: 14px; 
 	font-weight: bold; 
 	color: #FFFFFF;
-
 	padding: 10px;
 	}	
 	

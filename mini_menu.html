@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- basic meta tags -->
+	<meta lang="Eng"/>
+	<meta charset="UTF-8"/>
+	<meta name="robots" content="noindex nofollow"/>
+	
+	<!-- style related meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/default_style.css"/>	
+	<link rel="stylesheet" type="text/css" href="css/main_style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mini_menu_style.css"/>
+	
+	<!--style related java-script-->
+	<script defer src="scripts/menu_button_anim.js"></script>
+	
+	<!-- content related meta tags -->
+	<title>Mars Ventures</title>
+	<meta name="description" content="Trying to sell the surface of Mars"/>
+	<meta name="keywords" content="mars, sell, venture, profit, invest"/>
+</head>
+<body>
+	<div class="top_wrapper">
+		<header>
+			<div class="logo">
+				<button id="logo_home_button" onclick="document.location = 'index.html'">
+					<h1>Mars Ventures</h1>
+				</button>
+			</div>
+			<div class="hamburger">
+				<button id="mini_menu" onclick="document.location='mini_menu.html'"><img id="ham" src="pictures/mini_menu.png" alt=""/></button>
+			</div>
+			<nav id="nav">
+				<button class="menu_button" onclick="document.location = 'index.html#fly'">Flight</button>
+				<button class="menu_button" onclick="document.location = 'index.html#live'">Life</button>
+				<button class="menu_button" onclick="document.location = 'index.html#mobility'">Mobility</button>
+				<button class="active" onclick="document.location = 'contact.html'">Contact</button>
+			</nav>
+			<div class="login">
+				<button onclick="document.location='log_in.html'">Log in</button>
+			</div>  
+		</header>
+	</div>
+	<div class="middle_wrapper" id="mini_wrapper">
+		<main id="mini_main">
+			<section class="content" id="mini_content">
+				<div id="mini_nav">
+					<button class="mini_button" onclick="document.location = 'contact.html'">Sign UP!</button>
+					<button class="mini_button" onclick="document.location = 'index.html#fly'">Flight</button>
+					<button class="mini_button" onclick="document.location = 'index.html#live'">Life</button>
+					<button class="mini_button" onclick="document.location = 'index.html#mobility'">Mobility</button>
+					<button class="mini_button" onclick="document.location = 'contact.html'">Contact</button>
+				</div>
+			</section>
+
+		</main>
+	</div>
+	<!-- End of the MAIN information -->	
+	<div class="bottom_wrapper">
+		<p class="special">- Mars Ventures - copyrights &copy; 2020 - <a href="#live" class="special">Privacy Statement</a> - <a href="#live" class="special">Terms of Use</a> -</p>
+	</div>
+</body>
+</html>
